@@ -1,4 +1,3 @@
-# assessment_NN
 # 🧠 Forward Propagation Exercise — Perceptron Simulation
 
 This project is part of a take-home assignment for a Curriculum Engineer role at DeepLearning.AI.
