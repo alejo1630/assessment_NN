@@ -1,0 +1,90 @@
+I am designing a programming exercise where students must complete a function called forward_propagation that simulates a single perceptron in Python. The function takes a list of input values (length 2 or more) and an optional bias (default is 0). Students must:
+
+Convert the input list to a NumPy array
+
+- Initialize weights with values from a normal distribution scaled by 0.01
+
+- Compute the dot product of weights and inputs, then add the bias
+
+- Apply the sigmoid activation function manually (not from a library)
+
+- Return the weights and the final prediction
+
+The function should follow this template:
+
+def forward_propagation(inputs, bias=0):
+    """
+    Simulates forward propagation for a single perceptron.
+
+    Parameters:
+    - inputs: list of numerical input values (length >= 2)
+    - bias: bias term (default is 0)
+
+    Returns:
+    - weights: list of randomly initialized weights
+    - prediction: output after applying the sigmoid function
+    """
+
+    # Step 1: Convert inputs to a NumPy array
+    x = # your code goes here
+
+    # Step 2: Initialize weights with small random values (Normal distribution * 0.01)
+    weights = # your code goes here
+
+    # Step 3: Compute the weighted sum Z = w • x + b
+    z = # your code goes here
+
+    # Step 4: Define and apply the sigmoid activation function
+    def sigmoid(z):
+        # your code goes here
+        pass
+
+    prediction = # your code goes here
+
+    # Step 5: Return weights and prediction
+    return weights, prediction
+
+
+Now, write a detailed unit test in Python to validate this function. The test should:
+
+Test the function using three different input lengths (2, 5, and 10 elements)
+
+Check that:
+
+1. weights is a NumPy array
+
+2. prediction is a float or NumPy float
+
+3. the number of weights matches the number of inputs
+
+4. the prediction is within the range [0, 1]
+
+5. Also, include an extra test to confirm that changing the bias (e.g., from 0 to 5) while keeping the weights fixed (using np.random.seed) results in a different prediction
+
+Wrap the test in a test_forward_propagation() function and include try/except blocks that print ✅ success or ❌ failure messages
+
+Please generate the full unit test code.
+
+
+
+--------------------------------------------------------------------
+
+I want to create a Dockerfile that launches a Jupyter Lab server inside a container for a Python-based data science project.
+
+Please write a Dockerfile that:
+
+- Use the python:3.10-slim image
+
+- Set the working directory to /workspace
+
+- Install system dependencies (like build-essential)
+
+- Install packages from requirements.txt
+
+- Copy all project files into the container
+
+- Expose port 8888
+
+- Starts a Jupyter Lab server using the command: jupyter lab --ip=0.0.0.0 --port=8888 --allow-root --no-browser
+
+The goal is to ensure that anyone who builds this image and runs the container can access a working Jupyter Lab instance.
