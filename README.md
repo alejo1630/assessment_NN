@@ -1,3 +1,4 @@
+
 # 🧠 Forward Propagation Exercise — Perceptron Simulation
 
 This project is part of a take-home assignment for a Curriculum Engineer role at DeepLearning.AI.
@@ -65,4 +66,7 @@ If you want to run the notebook locally without Docker, install the dependencies
 pip install -r requirements.txt
 ```
 
+
 ---
+
+This project was assisted using ChatGPT. See `llm_chat_log.txt` for reference.
