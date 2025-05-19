@@ -69,7 +69,7 @@ Please generate the full unit test code.
 
 --------------------------------------------------------------------
 
-I want to create a Dockerfile that launches a Jupyter Lab server inside a container for a Python-based data science project.
+I want to create a Dockerfile that launches a Jupyter Lab server inside a container for a python project.
 
 Please write a Dockerfile that:
 
